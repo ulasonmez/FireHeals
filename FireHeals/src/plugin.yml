@@ -1,0 +1,10 @@
+main: me.Blume.FireHeals.Main
+name: FireHeals
+author: Blume
+version: 1.0
+api-version: 1.16
+
+commands:
+  addnofire:
+  removenofire:
+  
