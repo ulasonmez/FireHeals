@@ -19,10 +19,12 @@ public class removenofire implements CommandExecutor{
 		if(sender instanceof Player) {
 			Player player = (Player) sender;
 			if(args.length==0) {
-				if(label.equals("removenofire")) {
-					if(!plugin.getnofire().contains(player.getUniqueId())) {
-						player.sendMessage("No Fire removed");
-						plugin.removenofire(player);
+				if(plugin.getnofire().contains(player.getUniqueId())) {
+					if(label.equals("removenofire")) {
+						if(plugin.getnofire().contains(player.getUniqueId())) {
+							player.sendMessage("No Fire removed");
+							plugin.removenofire(player);
+						}
 					}
 				}
 			}
